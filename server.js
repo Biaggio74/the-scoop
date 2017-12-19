@@ -159,7 +159,7 @@ function createComment(url, request) {
       id: database.nextCommentId++,
       body: requestComment.body,
       username: requestComment.username,
-      articleId: article.id,
+      articleId: requestComment.article.id,
       upvotedBy: [],
       downvotedBy: []
     };
